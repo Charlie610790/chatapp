@@ -38,9 +38,11 @@ body {
 }
 
 .chat-header {
+    display: inline-block;
     margin: 0px auto;
+    margin-top: 10px;
     height: 50px;
-    width: 250px;
+    width: 700px;
     font-size: 30px;
     font-family: Helvetica;
     text-align: center;
