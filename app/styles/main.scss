@@ -11,7 +11,7 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #cacaca;
-    height: 700px;
+    height: 600px;
     width: 700px;
     border-radius: 5px;
 }
@@ -76,6 +76,7 @@ input {
     background: #fff;
     border-top: 1px solid #cacaca;
     max-height: 121px;
+    padding: 10px;
 }
 
 .chatInfo {
@@ -86,12 +87,13 @@ input {
 .timeField {
     display: inline-block;
     float: right;
+    margin-right: 10px;
 }
 
 .userName {
     display: inline-block;
     margin-bottom: 20px;
-    margin-left: -5px;
+    margin-left: 0px;
     background: #fff;
     color: #4183c4;
     text-decoration: none;
