@@ -2,90 +2,115 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+.container {
+    background-color: #000000;
 }
 
-/* Space out content a bit */
-body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+.chat-window{
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #cacaca;
+    height: 700px;
+    width: 700px;
+    border-radius: 5px;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
+.chat-box {
+    margin: 0px auto;
+    margin-top: 10px;
+    background-color: #ffffff;
+    height: 400px;
+    width: 600px;
+    box-sizing: border-box;
+    background: #f9f9f9;
+    border-style: solid;
+    border-width: 30px;
+    border-top-color: #e5e5e5;
+    border-right-color: #eee;
+    border-bottom-color: #e5e5e5;
+    border-left-color: #eee;
+    padding: 15px;
 }
 
-/* Custom page header */
-.header {
-    border-bottom: 1px solid #e5e5e5;
-
-    /* Make the masthead heading the same height as the navigation */
-    h3 {
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 40px;
-        padding-bottom: 19px;
-    }
-}
-
-/* Custom page footer */
-.footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
-}
-
-.container-narrow > hr {
-    margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
+.chat-header {
+    margin: 0px auto;
+    height: 50px;
+    width: 250px;
+    font-size: 30px;
+    font-family: Helvetica;
     text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-    .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-    }
 }
 
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-    p + h4 {
-        margin-top: 28px;
-    }
+.comment-box {
+    height: 40px;
+    margin-left: 50px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
+input {
+    border: 5px solid white; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 10px;
+    background: rgba(255,255,255,0.5);
+    margin: 15px 0 10px 10px;
+    width: 400px;
+}
 
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
+.footer {
+    color: #cacaca;
+    text-align: center;
+    font-family: Helvetica;
+    margin-bottom: 20px;
+    font-size: 10px;
+}
 
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
-    
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
+.chatField {
+    background: #fff;
+    border-top: 1px solid #cacaca;
+    max-height: 121px;
+}
+
+.chatInfo {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.timeField {
+    display: inline-block;
+    float: right;
+}
+
+.userName {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: -5px;
+    background: #fff;
+    color: #4183c4;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.commentText {
+    display: block;
+    color: #333333;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.updateTime {
+    display: block;
+    margin-bottom: 14px;
+    color: #999999;
+    font-size: 11px;
+    line-height: 24px;
 }
