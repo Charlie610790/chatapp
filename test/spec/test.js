@@ -3,12 +3,31 @@
 (function () {
     'use strict';
 
-    describe('Give it some context', function () {
-        describe('maybe a bit more context here', function () {
-            it('should run here few assertions', function () {
-                var answer = 2;
-                expect(2).to.equal(answer);
+    describe('Checking that the post has the properties for username, message, time, and meta.', function () {
+            
+            var user = 'Charlie610790';
+    		var message = 'This is the message.';
+            var time = '12:00pm';
+            var messageInstance = new Post(user,message,time);
+
+            it('Should test to make sure that the slideshow function has the property for array.', function () {
+                    
+                expect(messageInstance.user).to.eql('Charlie610790');
             });
+
+            it('Should test to make sure that the slideshow function has the property for interval.', function () {
+              
+                expect(messageInstance.message).to.eql('This is the message.');
+
+            });
+
+            it('Should test to make sure that the slideshow function has the property for delay.', function () {
+				
+				expect(messageInstance.time).to.eql('12:00pm');  
+
+			});
+
         });
-    });
+
 })();
+
