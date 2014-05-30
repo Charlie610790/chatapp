@@ -19,6 +19,11 @@ $('.reset').click(function() {
 	$('.chat-box').empty();
 });
 
+$('.submit').click(function() {
+	$('.input').val('');
+	$('.chat-box').empty();
+});
+
 function Post () {
     this.user = 'Username';
     this.comment = "COMMENT HERE";
