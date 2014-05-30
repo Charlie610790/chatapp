@@ -14,14 +14,13 @@ function renderChats (chats){
     });
 }
 
+$('.reset').click(function() {
+	$('.input').val('');
+	$('.chat-box').empty();
+});
+
 function Post () {
     this.user = 'Username';
     this.comment = "COMMENT HERE";
     this.time = "TIME HERE"
 }
-
-$('.reset').click(function() {
-	$('.input').val('');
-	$('.input-how-many-dice').val('');
-	$('.chat-box').empty();
-});
