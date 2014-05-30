@@ -13,3 +13,15 @@ function renderChats (chats){
         $('.chat-box').append(rendered);
     });
 }
+
+function Post () {
+    this.user = 'Username';
+    this.comment = "COMMENT HERE";
+    this.time = "TIME HERE"
+}
+
+$('.reset').click(function() {
+	$('.input').val('');
+	$('.input-how-many-dice').val('');
+	$('.chat-box').empty();
+});
