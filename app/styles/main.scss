@@ -86,7 +86,7 @@ input {
 .chatField {
     background: #fff;
     border-top: 1px solid #cacaca;
-    max-height: 121px;
+    min-height: 100px;
     padding: 10px;
 }
 

@@ -1,7 +1,7 @@
 'use strict';
 //sets the var getChatTemplate to add the template named chat-row and append in from the following url
 var getChatTemplate = _.template($('.chat-row').text());
-$.getJSON('http://tiny-pizza-server.herokuapp.com/collections/cchat2').done(function(chats){
+$.getJSON('http://tiny-pizza-server.herokuapp.com/collections/cchat').done(function(chats){
 //run function renderChats listed below on the argument of chats
     renderChats(chats);
 });
@@ -18,7 +18,7 @@ function renderChats (chats){
     })
 }
 
-$(".chat-box").scrollTop(400);
+// $(".chat-box").scrollTop(400);
 
 //reset button that clears the chat window
 $('.reset').click(function() {
@@ -45,6 +45,11 @@ $('.submitButton').click(function() {
     var user = 'Charlie610790';
 //creates a new instance of the constructor POST passing the three assigned variables
     var outgoingPost = new Post(user, message, time);
+        function updateChat (outgoingPost) {
+        $.post('http://tiny-pizza-server.herokuapp.com/collections/cchat', { user: this.user, message: this.message, time : this.time, meta: "Just Jonesn"
+    })
+        console.log(outgoingPost);
+    }
 });
 
 function Post (user,message,time) {
@@ -62,4 +67,6 @@ function Post (user,message,time) {
 //     message: this.message, 
 //     time : this.time, 
 //     meta: this.meta
+// })
+//     console.log(outgoingPost);
 // }
