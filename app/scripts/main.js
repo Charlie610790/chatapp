@@ -28,16 +28,17 @@ function renderChats (chats){
         }
     });
 }
-// //function just to run the set interval
-// function justForSet (chats) {
-//     var getChatTemplate = _.template($('.chat-row').text());
-//     $.getJSON('http://tiny-pizza-server.herokuapp.com/collections/cchat3').done(function(chats){
-// //run function renderChats listed below on the argument of chats
-//     renderChats(chats);
-// });
-// }
+//function just to run the set interval
+function justForSet (chats) {
+    $('.chat-box').empty();
+    var getChatTemplate = _.template($('.chat-row').text());
+    $.getJSON('http://tiny-pizza-server.herokuapp.com/collections/chat-messages').done(function(chats){
+//run function renderChats listed below on the argument of chats
+    renderChats(chats);
+    });
+}
 
-// setInterval(justForSet, 2000);
+setInterval(justForSet, 5000);
 
 //action that happens when the submit button is clicked
 $('.submitButton').click(function() {
