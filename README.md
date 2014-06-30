@@ -5,7 +5,7 @@ Chat app
 
 Using constructors to create instances of posts with comments to be passed into the chat application.  The ability to post new comments works correctly.  I hope to implement listenTo and on so that the application can listen to the collection of posts and update the chat window appropriately. 
 
-Below is a link to the live page:
+Below is a link to the live page:<BR>
 http://charlie610790.github.io/chatapp/
 
 Tools Used:<BR>
